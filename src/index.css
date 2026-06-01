@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  /* Vibrant Palette Branding Colors */
+  --color-brand-orange: #FF6B35;
+  --color-brand-yellow: #F7B801;
+  --color-brand-bg: #FFF9F5;
+  --color-brand-charcoal: #2D3142;
+  
+  /* Override Tailwind Orange colors to modern Vibrant Orange-Peach */
+  --color-orange-50: #FFF2EB;
+  --color-orange-100: #FFE6D5;
+  --color-orange-200: #FFCEB5;
+  --color-orange-400: #FF8A5E;
+  --color-orange-500: #FF6B35;
+  --color-orange-600: #E64E17;
+  --color-orange-700: #C23603;
+  --color-orange-800: #9E2600;
+  --color-orange-850: #FFE6D5;
+  --color-orange-950: #FFF9F5;
+
+  /* Redefining Slate mapping for a perfect automated Dark-to-Light transformation! */
+  --color-slate-950: #FFF9F5; /* Core Warm App Background */
+  --color-slate-900: #FFFFFF; /* Sleek White Cards and panels */
+  --color-slate-850: #FFE6D5; /* Soft warm peach border */
+  --color-slate-800: #FFE6D5; /* Warm border lines */
+  --color-slate-750: #FFE6D5;
+  --color-slate-705: #FFF9F5;
+  --color-slate-700: #FFE6D5;
+  --color-slate-600: #4A4E69; /* Warm dark gray descriptor text */
+  --color-slate-550: #4A4E69;
+  --color-slate-500: #6B7280; /* Neutral gray descriptive text */
+  --color-slate-400: #2D3142; /* Main dark charcoal headers */
+  --color-slate-350: #2D3142;
+  --color-slate-300: #2D3142; /* Standard dark body text */
+  --color-slate-205: #2D3142;
+  --color-slate-200: #2D3142;
+  --color-slate-100: #2D3142; /* Premium headers */
+  --color-slate-50: #FFFFFF;
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background-color: #FFF9F5;
+  color: #2D3142;
+  font-family: var(--font-sans);
+}

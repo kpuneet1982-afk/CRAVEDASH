@@ -1,0 +1,6 @@
+{
+  "name": "CraveDash",
+  "description": "Premium online food delivery platform. Features real-time interactive order tracking, VIP membership benefits, instant push notifications, and a multi-method secure checkout experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
